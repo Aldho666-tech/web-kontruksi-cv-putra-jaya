@@ -338,9 +338,18 @@ document.addEventListener('click', (e) => {
  * Sinkronisasi 3 Tab Navigasi (Desktop & Mobile Floating Bottom Bar)
  * Beranda, Produk, Profil (Sesuai Referensi Gambar)
  */
+/**
+ * Sinkronisasi Navigasi Tab Desktop & Mobile
+ * Mendukung environment lokal (.html) dan deployment hosting/Vercel (cleanUrls / clean routes)
+ */
 function initTabsSync() {
   const desktopTabs = document.querySelectorAll('.nav-links-center .nav-item');
   const mobileTabs = document.querySelectorAll('.mobile-bottom-bar .mobile-tab-item');
+
+  function isProdukRoute() {
+    const p = window.location.pathname.toLowerCase();
+    return p.includes('produk') || p.endsWith('/produk') || p.endsWith('/produk.html');
+  }
 
   function setActiveTab(tabName) {
     desktopTabs.forEach(t => {
@@ -370,6 +379,7 @@ function initTabsSync() {
       tab.addEventListener('click', (e) => {
         const tabType = tab.getAttribute('data-tab');
         const href = tab.getAttribute('href');
+        const onProduk = isProdukRoute();
 
         if (href && href.startsWith('#')) {
           e.preventDefault();
@@ -378,13 +388,29 @@ function initTabsSync() {
             target.scrollIntoView({ behavior: 'smooth' });
             setActiveTab(tabType);
           }
-        } else if (href === 'index.html' && (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/'))) {
+          return;
+        }
+
+        // Jika klik "Beranda" saat sudah berada di halaman Beranda -> smooth scroll ke atas
+        if (tabType === 'beranda' && !onProduk) {
+          e.preventDefault();
           if (window.location.hash) {
             history.pushState("", document.title, window.location.pathname);
           }
           window.scrollTo({ top: 0, behavior: 'smooth' });
           setActiveTab('beranda');
+          return;
+        }
+
+        // Jika klik "Produk" saat sudah berada di halaman Produk -> smooth scroll ke atas
+        if (tabType === 'produk' && onProduk) {
           e.preventDefault();
+          if (window.location.hash) {
+            history.pushState("", document.title, window.location.pathname);
+          }
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          setActiveTab('produk');
+          return;
         }
       });
     });
@@ -393,8 +419,8 @@ function initTabsSync() {
   setupTabClicks(desktopTabs);
   setupTabClicks(mobileTabs);
 
-  // Set active tab based on current page
-  if (window.location.pathname.includes('produk.html')) {
+  // Set active tab saat inisialisasi awal (mendukung /produk di Vercel dan produk.html di lokal)
+  if (isProdukRoute()) {
     setActiveTab('produk');
   } else {
     setActiveTab('beranda');

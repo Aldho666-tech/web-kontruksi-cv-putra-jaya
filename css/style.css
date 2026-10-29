@@ -1031,8 +1031,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 @media (max-width: 768px) {
   .mobile-bottom-bar { display: flex; }
-  body { padding-bottom: 86px; }
-  .wa-floating-btn { bottom: 88px !important; right: 16px !important; }
+  body { padding-bottom: calc(92px + env(safe-area-inset-bottom, 0px)); }
 }
 
 .mobile-tab-item {
@@ -1246,7 +1245,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .wa-float-wrapper {
-    bottom: 84px !important;
+    bottom: calc(84px + env(safe-area-inset-bottom, 0px)) !important;
     right: 16px !important;
     gap: 8px;
   }
