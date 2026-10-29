@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgG10" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="travDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="travYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#F5B301"/>
+      <stop offset="100%" stop-color="#D99A00"/>
+    </linearGradient>
+    <filter id="travShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgG10)"/>
+  <rect x="20" y="20" width="560" height="560" rx="16" fill="none" stroke="#F1F5F9" stroke-width="2"/>
+
+  <!-- Machine: Travelling Head Cutting Machine 35T -->
+  <g filter="url(#travShadow)">
+    <!-- Wide Bed Frame (1600mm) -->
+    <rect x="90" y="420" width="420" height="80" rx="8" fill="url(#travDark)"/>
+    <rect x="110" y="500" width="60" height="15" rx="3" fill="#020617"/>
+    <rect x="430" y="500" width="60" height="15" rx="3" fill="#020617"/>
+
+    <!-- Wide Cutting Table Surface -->
+    <rect x="100" y="380" width="400" height="40" rx="4" fill="#CBD5E1"/>
+    <rect x="115" y="385" width="370" height="30" rx="2" fill="#FEF08A" stroke="#F5B301" stroke-width="1.5"/>
+
+    <!-- Left & Right Heavy Gantry Posts -->
+    <rect x="100" y="180" width="40" height="200" rx="4" fill="url(#travDark)"/>
+    <rect x="460" y="180" width="40" height="200" rx="4" fill="url(#travDark)"/>
+
+    <!-- Overhead Heavy Horizontal Beam / Guide Rails -->
+    <rect x="90" y="160" width="420" height="50" rx="6" fill="url(#travDark)"/>
+    <!-- Chrome Traverse Rail -->
+    <rect x="120" y="175" width="360" height="15" fill="#E2E8F0"/>
+
+    <!-- Mobile Travelling Cutting Head (Moving in Center) -->
+    <rect x="230" y="195" width="140" height="120" rx="6" fill="url(#travYellow)"/>
+    <rect x="245" y="210" width="110" height="70" rx="4" fill="#0F172A"/>
+    <!-- Head Pressing Plate -->
+    <rect x="235" y="315" width="130" height="25" rx="3" fill="url(#travDark)"/>
+
+    <!-- Pressure Gauge on Head -->
+    <circle cx="300" cy="245" r="18" fill="#FFFFFF" stroke="#0F172A" stroke-width="2"/>
+    <line x1="300" y1="245" x2="308" y2="238" stroke="#DC2626" stroke-width="2"/>
+
+    <!-- Optical Safety Light Curtains (Yellow safety beams on sides) -->
+    <rect x="125" y="300" width="10" height="70" fill="#EF4444"/>
+    <rect x="465" y="300" width="10" height="70" fill="#EF4444"/>
+    <line x1="135" y1="320" x2="465" y2="320" stroke="#EF4444" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+    <line x1="135" y1="350" x2="465" y2="350" stroke="#EF4444" stroke-width="1" stroke-dasharray="4,4" opacity="0.6"/>
+
+    <!-- Central Plaque -->
+    <rect x="220" y="445" width="160" height="30" rx="4" fill="#020617" stroke="#F5B301" stroke-width="1"/>
+    <text x="300" y="460" font-family="Poppins, sans-serif" font-size="9" font-weight="700" fill="#F5B301" text-anchor="middle">TRAVELLING HEAD 35T</text>
+    <text x="300" y="471" font-family="Poppins, sans-serif" font-size="8" fill="#94A3B8" text-anchor="middle">1600MM BED WIDTH</text>
+  </g>
+
+  <g transform="translate(40, 50)">
+    <rect width="160" height="26" rx="13" fill="#F5B301"/>
+    <text x="80" y="17" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#111111" text-anchor="middle">MODEL: PJ-TRAV-35T</text>
+  </g>
+  <g transform="translate(405, 50)">
+    <rect width="155" height="26" rx="13" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="482" y="17" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">TRAVELLING 35 TON</text>
+  </g>
+</svg>
+

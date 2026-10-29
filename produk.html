@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katalog Produk Mesin Sepatu — CV Putra Jaya</title>
+  <meta name="description" content="Katalog lengkap mesin produksi sepatu CV Putra Jaya: mesin pond potong hidrolik, jahit cangklong post-bed, toe lasting, press sol airbag, skiving kulit, dan conveyor tunnel." />
+  <meta name="keywords" content="katalog mesin sepatu, mesin cutting pond, mesin jahit sepatu, mesin press sol, toe lasting machine, mesin seset kulit, CV Putra Jaya" />
+  <meta name="author" content="CV Putra Jaya" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Katalog Produk Mesin Sepatu — CV Putra Jaya" />
+  <meta property="og:description" content="Katalog lengkap mesin produksi sepatu dan industri alas kaki. Cek spesifikasi teknis dan ketersediaan stok via WhatsApp." />
+  <meta property="og:image" content="images/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+
+  <!-- Google Sans & Fallback Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom Minimalist Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- FLOATING NAVBAR (Pill Style) -->
+  <header class="site-header">
+    <nav class="navbar-pill" aria-label="Navigasi Utama">
+      <a href="index.html" class="brand-wrap" aria-label="CV Putra Jaya Beranda">
+        <img src="images/logo.png" alt="CV Putra Jaya — Alat Konstruksi & Mesin" class="brand-logo-img" />
+      </a>
+
+      <!-- Menu Links Desktop (Sinkron 3 Tab) -->
+      <div class="nav-links-center">
+        <a href="index.html" class="nav-item" data-tab="beranda">Beranda</a>
+        <a href="produk.html" class="nav-item active" data-tab="produk">Produk</a>
+      </div>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20CV%20Putra%20Jaya%2C%20saya%20ingin%20konsultasi%20kebutuhan%20mesin%20sepatu." target="_blank" rel="noopener noreferrer" class="btn-nav-cta">
+        <span>Konsultasi WA</span>
+        <span class="btn-arrow-circle">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <div class="catalog-page-header">
+      <div class="container">
+        <div class="hero-mobile-brand">
+          <img src="images/logo.png" alt="CV Putra Jaya" class="hero-mobile-logo" />
+        </div>
+        <p class="section-label" style="color: var(--gold);">KATALOG MESIN INDUSTRI SEPATU</p>
+        <h1>Koleksi Mesin Manufaktur Sepatu</h1>
+        <p>16+ tipe mesin produksi alas kaki dengan stok fisik siap uji di workshop Cibaduyut, Bandung. Lengkap dengan spesifikasi teknis, konsultasi daya listrik, dan garansi resmi 1 tahun.</p>
+        <div class="catalog-header-badges">
+          <span class="chb-item">✓ Stok Fisik di Workshop</span>
+          <span class="chb-item">✓ Uji Fungsi Sebelum Kirim</span>
+          <span class="chb-item">✓ Garansi Resmi 1 Tahun</span>
+          <span class="chb-item">✓ Teknisi &amp; Suku Cadang</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILTER & GRID PRODUK -->
+    <section class="section-pad" style="padding-top: 36px; padding-bottom: 0;">
+      <div class="container">
+        
+        <!-- Controls Bar -->
+        <div class="catalog-controls">
+          <!-- Filter Tabs -->
+          <div class="filter-tabs-wrap" role="tablist" aria-label="Filter Kategori Mesin">
+            <button class="filter-tab active" data-category="Semua" role="tab" aria-selected="true">
+              Semua Mesin <span class="tab-count">16</span>
+            </button>
+            <button class="filter-tab" data-category="Mesin Potong" role="tab" aria-selected="false">
+              Mesin Potong <span class="tab-count">2</span>
+            </button>
+            <button class="filter-tab" data-category="Mesin Jahit" role="tab" aria-selected="false">
+              Mesin Jahit <span class="tab-count">3</span>
+            </button>
+            <button class="filter-tab" data-category="Mesin Press Sol" role="tab" aria-selected="false">
+              Mesin Press Sol <span class="tab-count">4</span>
+            </button>
+            <button class="filter-tab" data-category="Mesin Lasting & Cetak" role="tab" aria-selected="false">
+              Mesin Cetak &amp; Lasting <span class="tab-count">3</span>
+            </button>
+            <button class="filter-tab" data-category="Mesin Finishing & Skiving" role="tab" aria-selected="false">
+              Mesin Finishing &amp; Skiving <span class="tab-count">4</span>
+            </button>
+          </div>
+
+          <!-- Quick Search -->
+          <div class="catalog-search-wrap">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="catalog-search" 
+              class="catalog-search-input" 
+              placeholder="Cari nama mesin, model, atau daya listrik (cth: cangklong, 27T, seset)..." 
+              aria-label="Cari nama mesin atau spesifikasi"
+            />
+          </div>
+        </div>
+
+        <!-- Summary & Status Bar -->
+        <div class="catalog-summary-bar">
+          <div id="catalog-counter" class="catalog-count-text">Menampilkan semua 16 mesin industri</div>
+          <div class="catalog-note-badge">
+            <span class="note-dot"></span> Unit Siap Uji di Workshop Cibaduyut &bull; Garansi 1 Tahun
+          </div>
+        </div>
+
+        <!-- Grid Produk Katalog -->
+        <div id="catalog-products-grid" class="products-grid-4">
+          <!-- Rendered dynamically by js/main.js from js/data.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA BAND BOTTOM -->
+    <section class="section-pad" style="padding-top: 0;">
+      <div class="container">
+        <div class="catalog-cta-band">
+          <div>
+            <h2>Membutuhkan Mesin Kustom atau Tipe Lain?</h2>
+            <p>CV Putra Jaya melayani pengadaan lini perakitan sepatu kustom, impor mesin industri khusus, dan modifikasi meja kerja pabrik sesuai kebutuhan kapasitas produksi Anda.</p>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20CV%20Putra%20Jaya%2C%20saya%20ingin%20konsultasi%20mesin%20custom." target="_blank" rel="noopener noreferrer" class="btn-dark-pill">
+            <span>Konsultasi Mesin Custom</span>
+            <span class="btn-arrow-circle">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (SESUAI REFERENSI GAMBAR) -->
+  <footer class="site-footer footer-ref" id="kontak">
+    <div class="footer-ref-container">
+      <div class="footer-ref-top">
+        <div class="footer-ref-brand">
+          <a href="index.html" class="footer-ref-logo-wrap">
+            <img src="images/logo.png" alt="CV Putra Jaya" class="footer-ref-logo" />
+          </a>
+          <span class="footer-ref-slogan">ALAT KONSTRUKSI &amp; MESIN</span>
+        </div>
+
+        <div class="footer-ref-columns">
+          <div class="footer-ref-col">
+            <h4 class="footer-ref-heading">PRODUK MESIN</h4>
+            <ul class="footer-ref-links">
+              <li><a href="produk.html">Mesin Potong (Cutting)</a></li>
+              <li><a href="produk.html">Mesin Jahit (Post-Bed)</a></li>
+              <li><a href="produk.html">Mesin Press Sol</a></li>
+              <li><a href="produk.html">Mesin Toe Lasting</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-ref-col">
+            <h4 class="footer-ref-heading">LAYANAN</h4>
+            <ul class="footer-ref-links">
+              <li><a href="https://wa.me/6281234567890?text=Halo%20CV%20Putra%20Jaya%2C%20saya%20ingin%20konsultasi." target="_blank" rel="noopener noreferrer">Konsultasi Mesin</a></li>
+              <li><a href="index.html#profil">Survei &amp; Uji Mesin</a></li>
+              <li><a href="produk.html">Garansi &amp; Servis</a></li>
+              <li><a href="produk.html">Ketersediaan Sparepart</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-ref-col">
+            <h4 class="footer-ref-heading">TENTANG KAMI</h4>
+            <ul class="footer-ref-links">
+              <li><a href="index.html#profil">Profil Perusahaan</a></li>
+              <li><a href="index.html#profil">Workshop Cibaduyut</a></li>
+              <li><a href="index.html#produk-unggulan">Standar Kualitas</a></li>
+              <li><a href="index.html#profil">Pabrik Rekanan</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-ref-col">
+            <h4 class="footer-ref-heading">HUBUNGI KAMI</h4>
+            <ul class="footer-ref-links">
+              <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">WhatsApp Resmi</a></li>
+              <li><a href="tel:+6281234567890">+62 812-3456-7890</a></li>
+              <li><a href="mailto:kontak@putrajayamesin.com">Email Kantor</a></li>
+              <li><a href="https://maps.google.com/?q=Cibaduyut+Bandung" target="_blank" rel="noopener noreferrer">Peta Cibaduyut</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-ref-divider"></div>
+
+      <div class="footer-ref-bottom">
+        <div class="footer-ref-socials">
+          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="WhatsApp">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.33 7.34 9 7.42 8.71 7.73C8.42 8.04 7.6 8.81 7.6 10.38C7.6 11.95 8.74 13.46 8.9 13.68C9.06 13.9 11.14 17.11 14.33 18.49C15.09 18.82 15.68 19.02 16.14 19.16C16.9 19.41 17.6 19.37 18.14 19.29C18.75 19.2 20.02 18.52 20.28 17.78C20.54 17.04 20.54 16.41 20.46 16.28C20.38 16.15 20.18 16.07 19.87 15.91C19.56 15.75 18.04 15 17.76 14.9C17.48 14.8 17.28 14.75 17.08 15.06C16.88 15.37 16.3 16.07 16.12 16.28C15.94 16.49 15.76 16.51 15.45 16.35C15.14 16.19 14.15 15.87 12.98 14.83C12.07 14.02 11.46 13.02 11.28 12.71C11.1 12.4 11.26 12.24 11.42 12.08C11.56 11.94 11.73 11.71 11.89 11.53C12.05 11.35 12.11 11.22 12.21 11.01C12.31 10.8 12.26 10.62 12.18 10.46C12.1 10.3 11.52 8.87 11.28 8.29C11.05 7.72 10.81 7.8 10.63 7.79C10.46 7.78 10.26 7.78 10.05 7.78C9.85 7.78 9.53 7.85 9.53 7.34Z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://maps.google.com/?q=Cibaduyut+Bandung" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Lokasi Workshop">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </a>
+          <a href="mailto:kontak@putrajayamesin.com" class="social-circle" aria-label="Email Kami">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+          <a href="produk.html" class="social-circle" aria-label="Katalog Mesin">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="footer-ref-copy">&copy; Copyright. All rights reserved.</p>
+        <p class="footer-ref-sub">CV Putra Jaya &bull; Sentra Industri Cibaduyut, Bandung</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING MOBILE BOTTOM TAB BAR (BERANDA & PRODUK) -->
+  <nav class="mobile-bottom-bar" aria-label="Navigasi Mobile">
+    <a href="index.html" class="mobile-tab-item" data-tab="beranda" aria-label="Tab Beranda">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span class="mobile-tab-label">Beranda</span>
+    </a>
+
+    <a href="produk.html" class="mobile-tab-item active" data-tab="produk" aria-label="Tab Produk">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="7" width="16" height="14" rx="2"></rect>
+        <path d="M8 7V5a4 4 0 0 1 8 0v2"></path>
+      </svg>
+      <span class="mobile-tab-label">Produk</span>
+    </a>
+  </nav>
+
+  <!-- FLOATING WHATSAPP INTERACTIVE -->
+  <a href="https://wa.me/6281234567890?text=Halo%20CV%20Putra%20Jaya%2C%20saya%20ingin%20konsultasi%20kebutuhan%20mesin%20produksi%20sepatu."
+     target="_blank" rel="noopener noreferrer" class="wa-float-wrapper" aria-label="Konsultasi WhatsApp CV Putra Jaya">
+    <div class="wa-float-tooltip">
+      <span class="wa-tooltip-dot"></span>
+      <span class="wa-tooltip-text">Konsultasi Mesin</span>
+      <span class="wa-tooltip-arrow">↗</span>
+    </div>
+    <div class="wa-float-circle" title="Chat WhatsApp CV Putra Jaya">
+      <span class="wa-pulse-ring"></span>
+      <span class="wa-pulse-ring wa-pulse-ring-2"></span>
+      <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.34C9.33 7.34 9 7.42 8.71 7.73C8.42 8.04 7.6 8.81 7.6 10.38C7.6 11.95 8.74 13.46 8.9 13.68C9.06 13.9 11.14 17.11 14.33 18.49C15.09 18.82 15.68 19.02 16.14 19.16C16.9 19.41 17.6 19.37 18.14 19.29C18.75 19.2 20.02 18.52 20.28 17.78C20.54 17.04 20.54 16.41 20.46 16.28C20.38 16.15 20.18 16.07 19.87 15.91C19.56 15.75 18.04 15 17.76 14.9C17.48 14.8 17.28 14.75 17.08 15.06C16.88 15.37 16.3 16.07 16.12 16.28C15.94 16.49 15.76 16.51 15.45 16.35C15.14 16.19 14.15 15.87 12.98 14.83C12.07 14.02 11.46 13.02 11.28 12.71C11.1 12.4 11.26 12.24 11.42 12.08C11.56 11.94 11.73 11.71 11.89 11.53C12.05 11.35 12.11 11.22 12.21 11.01C12.31 10.8 12.26 10.62 12.18 10.46C12.1 10.3 11.52 8.87 11.28 8.29C11.05 7.72 10.81 7.8 10.63 7.79C10.46 7.78 10.26 7.78 10.05 7.78C9.85 7.78 9.53 7.85 9.53 7.34Z"/>
+      </svg>
+      <span class="wa-status-badge">
+        <span class="wa-status-ping"></span>
+        <span class="wa-status-dot"></span>
+      </span>
+    </div>
+  </a>
+
+  <!-- MODAL DETAIL PRODUK -->
+  <div id="product-detail-modal" class="modal-backdrop"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

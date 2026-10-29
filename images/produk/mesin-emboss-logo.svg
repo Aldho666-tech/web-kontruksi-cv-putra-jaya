@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgG14" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="embDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="embYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#F5B301"/>
+      <stop offset="100%" stop-color="#D99A00"/>
+    </linearGradient>
+    <filter id="embShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgG14)"/>
+  <rect x="20" y="20" width="560" height="560" rx="16" fill="none" stroke="#F1F5F9" stroke-width="2"/>
+
+  <!-- Machine: Hot Stamping Emboss Logo Pneumatic (PJ-EMB-PNEU) -->
+  <g filter="url(#embShadow)">
+    <rect x="160" y="440" width="280" height="65" rx="8" fill="url(#embDark)"/>
+    <rect x="180" y="505" width="45" height="15" rx="3" fill="#020617"/>
+    <rect x="375" y="505" width="45" height="15" rx="3" fill="#020617"/>
+
+    <!-- Dual Guide Columns -->
+    <rect x="190" y="200" width="30" height="240" fill="url(#embDark)"/>
+    <rect x="380" y="200" width="30" height="240" fill="url(#embDark)"/>
+
+    <!-- Pneumatic Cylinder on Top -->
+    <rect x="260" y="140" width="80" height="80" rx="6" fill="#1E293B"/>
+    <rect x="285" y="220" width="30" height="50" fill="#CBD5E1"/>
+
+    <!-- Hot Stamping Heating Block & Foil Spool -->
+    <rect x="220" y="270" width="160" height="45" rx="4" fill="url(#embYellow)"/>
+    <text x="300" y="298" font-family="Poppins, sans-serif" font-size="10" font-weight="700" fill="#020617" text-anchor="middle">HEATED EMBOSS DIE</text>
+
+    <!-- Gold Foil Roll Feeder (Pita Emas Hot Stamping) -->
+    <circle cx="170" cy="270" r="22" fill="#FCD34D" stroke="#D99A00" stroke-width="2"/>
+    <circle cx="430" cy="270" r="18" fill="#FCD34D" stroke="#D99A00" stroke-width="2"/>
+    <line x1="170" y1="315" x2="430" y2="315" stroke="#F5B301" stroke-width="4"/>
+
+    <!-- Worktable (Sliding Drawer for Insole) -->
+    <rect x="180" y="380" width="240" height="40" rx="4" fill="#CBD5E1"/>
+    <!-- Insole with Logo Emboss Demo -->
+    <path d="M 230 395 Q 260 385 300 390 Q 350 385 370 395 Q 360 410 300 405 Q 240 410 230 395 Z" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="300" y="401" font-family="Poppins, sans-serif" font-size="7" font-weight="700" fill="#D99A00" text-anchor="middle">PUTRA JAYA</text>
+
+    <!-- Digital Temperature & Dwell Timer -->
+    <rect x="420" y="340" width="70" height="70" rx="6" fill="#020617" stroke="#F5B301" stroke-width="1.5"/>
+    <rect x="428" y="348" width="54" height="20" rx="2" fill="#052E16"/>
+    <text x="455" y="362" font-family="monospace" font-size="10" fill="#22C55E" text-anchor="middle">180°C</text>
+    <circle cx="445" cy="390" r="6" fill="#22C55E"/>
+    <circle cx="465" cy="390" r="6" fill="#EF4444"/>
+
+    <rect x="230" y="460" width="140" height="25" rx="3" fill="#020617" stroke="#F5B301" stroke-width="1"/>
+    <text x="300" y="476" font-family="Poppins, sans-serif" font-size="8" font-weight="700" fill="#F5B301" text-anchor="middle">EMBOSS PNEUMATIC 6 BAR</text>
+  </g>
+
+  <g transform="translate(40, 50)">
+    <rect width="160" height="26" rx="13" fill="#F5B301"/>
+    <text x="80" y="17" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#111111" text-anchor="middle">MODEL: PJ-EMB-PNEU</text>
+  </g>
+  <g transform="translate(405, 50)">
+    <rect width="155" height="26" rx="13" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="482" y="17" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">EMBOSS LOGO & INSOLE</text>
+  </g>
+</svg>
+

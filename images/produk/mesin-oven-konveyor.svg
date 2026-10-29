@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgG11" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="tunDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="tunYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#F5B301"/>
+      <stop offset="100%" stop-color="#D99A00"/>
+    </linearGradient>
+    <linearGradient id="heatGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="50%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#F5B301"/>
+    </linearGradient>
+    <filter id="tunShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgG11)"/>
+  <rect x="20" y="20" width="560" height="560" rx="16" fill="none" stroke="#F1F5F9" stroke-width="2"/>
+
+  <!-- Machine: Heat Setter Conveyor Tunnel (PJ-HEAT-TUNNEL) -->
+  <g filter="url(#tunShadow)">
+    <!-- Stand Legs (4 Legs) -->
+    <rect x="110" y="440" width="20" height="70" fill="url(#tunDark)"/>
+    <rect x="230" y="440" width="20" height="70" fill="url(#tunDark)"/>
+    <rect x="350" y="440" width="20" height="70" fill="url(#tunDark)"/>
+    <rect x="470" y="440" width="20" height="70" fill="url(#tunDark)"/>
+    <line x1="90" y1="480" x2="510" y2="480" stroke="#334155" stroke-width="4"/>
+
+    <!-- Conveyor Belt Deck -->
+    <rect x="80" y="415" width="440" height="30" rx="4" fill="#0F172A"/>
+    <!-- Conveyor Mesh Pattern -->
+    <line x1="80" y1="422" x2="520" y2="422" stroke="#475569" stroke-width="2"/>
+    <line x1="80" y1="435" x2="520" y2="435" stroke="#475569" stroke-width="2"/>
+
+    <!-- Main Insulated Heating Tunnel Chamber -->
+    <rect x="150" y="220" width="300" height="195" rx="8" fill="url(#tunDark)" stroke="#334155" stroke-width="2"/>
+    <rect x="150" y="215" width="300" height="15" fill="url(#tunYellow)"/>
+
+    <!-- Tunnel Glass Inspection Windows / Heat Viewports -->
+    <rect x="190" y="260" width="95" height="100" rx="4" fill="#020617" stroke="#475569" stroke-width="2"/>
+    <rect x="195" y="265" width="85" height="90" rx="2" fill="url(#heatGlow)" opacity="0.8"/>
+    <!-- Infrared Heating Quartz Lamps Inside -->
+    <line x1="200" y1="280" x2="275" y2="280" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="200" y1="305" x2="275" y2="305" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="200" y1="330" x2="275" y2="330" stroke="#FFFFFF" stroke-width="3"/>
+
+    <rect x="315" y="260" width="95" height="100" rx="4" fill="#020617" stroke="#475569" stroke-width="2"/>
+    <rect x="320" y="265" width="85" height="90" rx="2" fill="url(#heatGlow)" opacity="0.8"/>
+    <line x1="325" y1="280" x2="400" y2="280" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="325" y1="305" x2="400" y2="305" stroke="#FFFFFF" stroke-width="3"/>
+    <line x1="325" y1="330" x2="400" y2="330" stroke="#FFFFFF" stroke-width="3"/>
+
+    <!-- Shoes Moving on Conveyor Through Chamber -->
+    <path d="M 100 405 Q 120 395 140 400 L 140 415 L 100 415 Z" fill="#F5B301"/>
+    <path d="M 460 405 Q 480 395 500 400 L 500 415 L 460 415 Z" fill="#F5B301"/>
+
+    <!-- Exhaust Blower Duct on Top -->
+    <rect x="270" y="150" width="60" height="70" rx="4" fill="#334155"/>
+    <ellipse cx="300" cy="150" rx="30" ry="12" fill="#64748B"/>
+
+    <!-- PID Temperature Control Box -->
+    <rect x="460" y="260" width="70" height="90" rx="4" fill="#020617" stroke="#F5B301" stroke-width="1.5"/>
+    <rect x="470" y="270" width="50" height="22" rx="2" fill="#052E16"/>
+    <text x="495" y="285" font-family="monospace" font-size="11" font-weight="700" fill="#22C55E" text-anchor="middle">105°C</text>
+    <circle cx="485" cy="310" r="5" fill="#F5B301"/>
+    <circle cx="505" cy="310" r="5" fill="#EF4444"/>
+    <rect x="472" y="325" width="46" height="15" rx="2" fill="#334155"/>
+    <text x="495" y="336" font-family="Poppins, sans-serif" font-size="7" fill="#FFFFFF" text-anchor="middle">INVERTER</text>
+
+    <!-- Plaque -->
+    <rect x="220" y="380" width="160" height="24" rx="4" fill="#020617" stroke="#F5B301" stroke-width="1"/>
+    <text x="300" y="395" font-family="Poppins, sans-serif" font-size="8" font-weight="700" fill="#F5B301" text-anchor="middle">INFRARED HEAT SETTER</text>
+  </g>
+
+  <g transform="translate(40, 50)">
+    <rect width="170" height="26" rx="13" fill="#F5B301"/>
+    <text x="85" y="17" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#111111" text-anchor="middle">MODEL: PJ-HEAT-TUNNEL</text>
+  </g>
+  <g transform="translate(405, 50)">
+    <rect width="155" height="26" rx="13" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="482" y="17" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">OVEN KONVEYOR LEM</text>
+  </g>
+</svg>
+

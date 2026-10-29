@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgG2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="ironDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="metalChrome" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F1F5F9"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="amberGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="50%" stop-color="#F5B301"/>
+      <stop offset="100%" stop-color="#D99A00"/>
+    </linearGradient>
+    <filter id="sewShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgG2)"/>
+  <rect x="20" y="20" width="560" height="560" rx="16" fill="none" stroke="#F1F5F9" stroke-width="2"/>
+
+  <!-- Machine: Post-Bed Heavy Duty Sewing Machine -->
+  <g filter="url(#sewShadow)">
+    <!-- Heavy Table Top -->
+    <rect x="110" y="440" width="380" height="24" rx="3" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="120" y="464" width="360" height="50" rx="4" fill="url(#ironDark)"/>
+    <rect x="150" y="514" width="40" height="15" rx="2" fill="#0F172A"/>
+    <rect x="410" y="514" width="40" height="15" rx="2" fill="#0F172A"/>
+
+    <!-- The Vertical Post (Tiang Cangklong Khas Sepatu) -->
+    <rect x="210" y="290" width="48" height="150" rx="6" fill="url(#ironDark)"/>
+    <!-- Post Tip / Throat Plate & Roller -->
+    <rect x="206" y="280" width="56" height="14" rx="3" fill="url(#metalChrome)"/>
+    <circle cx="234" cy="287" r="5" fill="#0F172A"/>
+    <circle cx="234" cy="275" r="7" fill="url(#amberGold)" stroke="#D99A00" stroke-width="1.5"/>
+
+    <!-- Right Pillar / Sewing Body Column -->
+    <path d="M 370 440 L 440 440 L 440 230 C 440 200 410 180 370 180 L 190 180 C 170 180 160 195 160 215 L 160 260 L 210 260 L 210 230 L 360 230 L 370 440 Z" fill="url(#ironDark)"/>
+
+    <!-- Yellow Machine Head Trim -->
+    <rect x="160" y="200" width="280" height="16" fill="url(#amberGold)"/>
+
+    <!-- Sewing Needle Bar & Roller Foot -->
+    <rect x="195" y="235" width="8" height="42" fill="url(#metalChrome)"/>
+    <line x1="199" y1="277" x2="199" y2="295" stroke="#475569" stroke-width="2.5"/> <!-- Needle -->
+    <!-- Roller Presser Foot Assembly -->
+    <circle cx="212" cy="285" r="9" fill="url(#amberGold)" stroke="#1E293B" stroke-width="1.5"/>
+    <rect x="200" y="250" width="22" height="10" rx="2" fill="url(#metalChrome)"/>
+
+    <!-- Take-up Lever -->
+    <path d="M 210 170 L 210 205 L 218 200 Z" fill="url(#metalChrome)"/>
+    <circle cx="210" cy="172" r="3" fill="#DC2626"/>
+
+    <!-- Thread Tension Discs -->
+    <circle cx="260" cy="210" r="14" fill="url(#metalChrome)" stroke="#64748B" stroke-width="2"/>
+    <circle cx="260" cy="210" r="6" fill="#DC2626"/>
+
+    <!-- Direct Drive Servo Motor (Right Side) -->
+    <rect x="430" y="230" width="45" height="110" rx="8" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <circle cx="452" cy="285" r="28" fill="url(#metalChrome)" stroke="#475569" stroke-width="3"/>
+    <circle cx="452" cy="285" r="10" fill="url(#amberGold)"/>
+
+    <!-- Digital Speed & Stitch Control Panel -->
+    <rect x="300" y="310" width="85" height="50" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+    <rect x="308" y="318" width="69" height="22" rx="3" fill="#052E16"/>
+    <text x="342" y="334" font-family="monospace" font-size="12" font-weight="700" fill="#22C55E" text-anchor="middle">2500 RPM</text>
+    <circle cx="320" cy="350" r="4" fill="#F5B301"/>
+    <circle cx="340" cy="350" r="4" fill="#3B82F6"/>
+    <circle cx="360" cy="350" r="4" fill="#EF4444"/>
+
+    <!-- Reverse Stitch Lever -->
+    <rect x="325" y="380" width="35" height="12" rx="3" fill="url(#amberGold)"/>
+
+    <!-- Dual Thread Spool Rack (Top) -->
+    <line x1="390" y1="180" x2="390" y2="105" stroke="#94A3B8" stroke-width="3"/>
+    <line x1="340" y1="105" x2="440" y2="105" stroke="#94A3B8" stroke-width="3"/>
+    <!-- Thread Cone 1 -->
+    <path d="M 350 105 L 358 135 L 372 135 L 380 105 Z" fill="#F5B301" opacity="0.8"/>
+    <!-- Thread Cone 2 -->
+    <path d="M 400 105 L 408 135 L 422 135 L 430 105 Z" fill="#3B82F6" opacity="0.8"/>
+
+    <!-- Spec Brand Plaque -->
+    <rect x="250" y="475" width="130" height="28" rx="4" fill="#1E293B" stroke="#F5B301" stroke-width="1"/>
+    <text x="315" y="488" font-family="Poppins, sans-serif" font-size="9" font-weight="700" fill="#F5B301" text-anchor="middle">POST-BED ROLLER</text>
+    <text x="315" y="498" font-family="Poppins, sans-serif" font-size="8" fill="#94A3B8" text-anchor="middle">DIRECT DRIVE SERVO</text>
+  </g>
+
+  <!-- Badges -->
+  <g transform="translate(40, 50)">
+    <rect width="145" height="26" rx="13" fill="#F5B301"/>
+    <text x="72" y="17" font-family="Poppins, sans-serif" font-size="11" font-weight="700" fill="#111111" text-anchor="middle">MODEL: PJ-POST-810</text>
+  </g>
+  <g transform="translate(415, 50)">
+    <rect width="145" height="26" rx="13" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="487" y="17" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">SINGLE NEEDLE POST</text>
+  </g>
+</svg>
+
